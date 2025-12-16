@@ -1,0 +1,98 @@
+.form-box {
+  width: 400px;
+  margin: 100px auto;
+  padding: 2rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  text-align: start;
+  background-color: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form-label {
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  border-radius: 0;
+  padding-left: 0;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-bottom-color: rgb(45, 166, 240);
+  background-color: transparent;
+  transform: scale(1.02);
+}
+
+.btn-primary {
+  width: 100%;
+  margin-top: 15px;
+  background-color: rgb(45, 166, 240);
+  border: none;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: rgb(35, 145, 210);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(45, 166, 240, 0.4);
+}
+
+.btn-primary:active {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(45, 166, 240, 0.3);
+}
+
+/* Animación para la alerta */
+.alert-animate {
+  animation: popIn 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) both;
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Animación de salida para el formulario antes de navegar */
+.form-exit {
+  animation: fadeOutDown 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+}
