@@ -101,6 +101,6 @@ CRUD-final-fullstack/
 
 ¡Las contribuciones son bienvenidas! Si tienes ideas para mejorar el diseño o agregar nuevas funcionalidades, siéntete libre de hacer un fork y enviar un pull request.
 
----
+https://github.com/user-attachments/assets/13376531-a2e9-4530-a861-d63fbda2c755
 
 Hecho por notJona.
